@@ -11,7 +11,7 @@
     <h1>Mortgage Calculator</h1>
     <div>
       <label for="loanAmount">Loan Amount ($):</label>
-      <input type="number" id="loanAmount" placeholder="Enter loan amount" step="any" oninput="validity.valid||(value='');">
+      <input type="text" id="loanAmount" placeholder="Enter loan amount" oninput="formatLoanAmount(this)" maxlength="15">
     </div>
     <div>
       <label for="interestRate">Annual Interest Rate (%):</label>
