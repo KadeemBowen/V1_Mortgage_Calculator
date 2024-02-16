@@ -11,15 +11,15 @@
     <h1>Mortgage Calculator</h1>
     <div>
       <label for="loanAmount">Loan Amount ($):</label>
-      <input type="number" id="loanAmount" placeholder="Enter loan amount" oninput="validity.valid||(value='');">
+      <input type="number" id="loanAmount" placeholder="Enter loan amount" step="any" oninput="validity.valid||(value='');">
     </div>
     <div>
       <label for="interestRate">Annual Interest Rate (%):</label>
-      <input type="number" id="interestRate" placeholder="Enter annual interest rate" oninput="validity.valid||(value='');">
+      <input type="number" id="interestRate" placeholder="Enter annual interest rate (e.g., 3.5)" step="any" oninput="validity.valid||(value='');">
     </div>
     <div>
       <label for="loanTerm">Loan Term (years):</label>
-      <input type="number" id="loanTerm" placeholder="Enter loan term in years" oninput="validity.valid||(value='');">
+      <input type="number" id="loanTerm" placeholder="Enter loan term in years" step="1" oninput="validity.valid||(value='');">
     </div>
     <div>
       <button onclick="calculateMortgage()">Calculate</button>
@@ -32,4 +32,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
